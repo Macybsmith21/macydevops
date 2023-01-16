@@ -1,7 +1,10 @@
 name: Build and Deploy
 
 on:
-  workflow_dispatch: {}
+  #workflow_dispatch: {}
+  push:
+    branches: [ main ]
+  pull_request:
 
 env:
   applicationfolder: spring-boot-hello-world-example
